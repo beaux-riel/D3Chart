@@ -1,0 +1,402 @@
+{
+    "months_activity": [
+        {
+            "bpm": 85,
+            "end_datetime": "2023-09-26T17:25:09.1200005Z",
+            "kp_hms_split": {
+                "1": "00:37:55",
+                "2": "00:00:40",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 78,
+            "kp_zone_split": {
+                "1": 76,
+                "2": 2,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-26T16:46:22.2600006Z",
+            "time_spent_min": 39,
+            "current_week_workout": true,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 82,
+            "end_datetime": "2023-09-25T11:47:40.7900006Z",
+            "kp_hms_split": {
+                "1": "00:32:30",
+                "2": "00:00:00",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 65,
+            "kp_zone_split": {
+                "1": 65,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-25T11:15:07.5000008Z",
+            "time_spent_min": 32,
+            "current_week_workout": true,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 94,
+            "end_datetime": "2023-09-24T17:27:23.7200003Z",
+            "kp_hms_split": {
+                "1": "00:25:25",
+                "2": "00:00:10",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 52,
+            "kp_zone_split": {
+                "1": 51,
+                "2": 1,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-24T17:01:45.5900007Z",
+            "time_spent_min": 26,
+            "current_week_workout": true,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 93,
+            "end_datetime": "2023-09-24T10:58:59.8200005Z",
+            "kp_hms_split": {
+                "1": "00:38:20",
+                "2": "00:00:00",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 77,
+            "kp_zone_split": {
+                "1": 77,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-24T10:20:30.7000002Z",
+            "time_spent_min": 38,
+            "current_week_workout": true,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 95,
+            "end_datetime": "2023-09-23T18:02:37.1400002Z",
+            "kp_hms_split": {
+                "1": "01:35:15",
+                "2": "00:10:10",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 217,
+            "kp_zone_split": {
+                "1": 191,
+                "2": 26,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-23T16:17:09.0900007Z",
+            "time_spent_min": 105,
+            "current_week_workout": false,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 93,
+            "end_datetime": "2023-09-23T10:22:59.3000002Z",
+            "kp_hms_split": {
+                "1": "00:28:35",
+                "2": "00:00:00",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 58,
+            "kp_zone_split": {
+                "1": 58,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-23T09:54:17.6300000Z",
+            "time_spent_min": 28,
+            "current_week_workout": false,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 75,
+            "end_datetime": "2023-09-22T19:08:43.2300005Z",
+            "kp_hms_split": {
+                "1": "02:54:25",
+                "2": "00:00:20",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 350,
+            "kp_zone_split": {
+                "1": 349,
+                "2": 1,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-22T16:13:35.4400008Z",
+            "time_spent_min": 175,
+            "current_week_workout": false,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 81,
+            "end_datetime": "2023-09-20T17:05:59.5100003Z",
+            "kp_hms_split": {
+                "1": "00:33:00",
+                "2": "00:00:45",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 68,
+            "kp_zone_split": {
+                "1": 66,
+                "2": 2,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-20T16:32:03.7800002Z",
+            "time_spent_min": 33,
+            "current_week_workout": false,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 73,
+            "end_datetime": "2023-09-20T08:43:00.2800009Z",
+            "kp_hms_split": {
+                "1": "00:27:25",
+                "2": "00:00:00",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 55,
+            "kp_zone_split": {
+                "1": 55,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-20T08:15:27.3000003Z",
+            "time_spent_min": 28,
+            "current_week_workout": false,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 74,
+            "end_datetime": "2023-09-27T10:23:17.8100005Z",
+            "kp_hms_split": {
+                "1": "00:35:00",
+                "2": "00:00:00",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 70,
+            "kp_zone_split": {
+                "1": 70,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-27T09:48:05.1000000Z",
+            "time_spent_min": 35,
+            "current_week_workout": true,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 68,
+            "end_datetime": "2023-09-28T12:55:58.9300008Z",
+            "kp_hms_split": {
+                "1": "02:09:10",
+                "2": "00:01:25",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 263,
+            "kp_zone_split": {
+                "1": 259,
+                "2": 4,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-28T10:45:12.6700004Z",
+            "time_spent_min": 130,
+            "current_week_workout": true,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 94,
+            "end_datetime": "2023-09-28T17:30:27.9900009Z",
+            "kp_hms_split": {
+                "1": "00:27:35",
+                "2": "00:00:00",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 56,
+            "kp_zone_split": {
+                "1": 56,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-28T17:02:47.3900003Z",
+            "time_spent_min": 28,
+            "current_week_workout": true,
+            "performance_level_name": "Casual"
+        },
+        {
+            "bpm": 83,
+            "end_datetime": "2023-09-28T18:25:34.7800001Z",
+            "kp_hms_split": {
+                "1": "00:48:50",
+                "2": "00:00:00",
+                "3": "00:00:00",
+                "4": "00:00:00",
+                "5": "00:00:00"
+            },
+            "activity_name": "Walking",
+            "kardio_points": 98,
+            "kp_zone_split": {
+                "1": 98,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0
+            },
+            "start_datetime": "2023-09-28T17:36:37.3500003Z",
+            "time_spent_min": 49,
+            "current_week_workout": true,
+            "performance_level_name": "Casual"
+        }
+    ],
+    "week_minute_per_zone": {
+        "1": "6:14:45",
+        "2": "0:02:15",
+        "3": "0:00:00",
+        "4": "0:00:00",
+        "5": "0:00:00"
+    },
+    "bpm_per_zone": {
+        "1": [
+            92.8,
+            111.4
+        ],
+        "2": [
+            111.4,
+            129.9
+        ],
+        "3": [
+            129.9,
+            148.5
+        ],
+        "4": [
+            148.5,
+            167.0
+        ],
+        "5": [
+            167.0,
+            185.6
+        ]
+    },
+    "zone_name": {
+        "1": "Casual",
+        "2": "Light",
+        "3": "Medium",
+        "4": "High",
+        "5": "Maximum"
+    },
+    "weeks_point": 759,
+    "percent_points": 108,
+    "heart_chart_cumulative_format2": {
+        "1": {
+            "Sunday": 10,
+            "Monday": 15,
+            "Tuesday": 26,
+            "Wednesday": 33,
+            "Thursday": 46,
+            "Friday": 75,
+            "Saturday": 102
+        },
+        "2": {
+            "Sunday": 10,
+            "Monday": 20,
+            "Tuesday": 30,
+            "Wednesday": 30,
+            "Thursday": 47,
+            "Friday": 75,
+            "Saturday": 79
+        },
+        "3": {
+            "Sunday": 10,
+            "Monday": 20,
+            "Tuesday": 30,
+            "Wednesday": 40,
+            "Thursday": 50,
+            "Friday": 60,
+            "Saturday": 70
+        },
+        "4": {
+            "Sunday": 10,
+            "Monday": 20,
+            "Tuesday": 30,
+            "Wednesday": 40,
+            "Thursday": 50,
+            "Friday": 60,
+            "Saturday": 70
+        },
+        "5": {
+            "Sunday": 10,
+            "Monday": 20,
+            "Tuesday": 30,
+            "Wednesday": 40,
+            "Thursday": 50,
+            "Friday": 60,
+            "Saturday": 70
+        }
+    },
+    "image_url": "https://kardio-profile-pic.s3.amazonaws.com/thumbnails/B96B8FA5-8B05-4F73-90C2-A7E3581C830F.jpg?AWSAccessKeyId=AKIA3OYZWWCUC4ONJBAE&Signature=ntQUaPQxpyF7pE7uXhfbVYBadPs%3D&Expires=1696649363"
+}
