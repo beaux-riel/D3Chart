@@ -353,7 +353,7 @@
     "percent_points": 108,
     "heart_chart_cumulative_format2": {
         "1": {
-            "Sunday": 10,
+            "Sunday": 0,
             "Monday": 15,
             "Tuesday": 26,
             "Wednesday": 33,
@@ -362,7 +362,7 @@
             "Saturday": 102
         },
         "2": {
-            "Sunday": 10,
+            "Sunday": 0,
             "Monday": 20,
             "Tuesday": 30,
             "Wednesday": 30,
@@ -371,7 +371,7 @@
             "Saturday": 79
         },
         "3": {
-            "Sunday": 10,
+            "Sunday": 0,
             "Monday": 20,
             "Tuesday": 30,
             "Wednesday": 40,
@@ -380,7 +380,7 @@
             "Saturday": 70
         },
         "4": {
-            "Sunday": 10,
+            "Sunday": 0,
             "Monday": 20,
             "Tuesday": 30,
             "Wednesday": 40,
@@ -389,7 +389,7 @@
             "Saturday": 70
         },
         "5": {
-            "Sunday": 10,
+            "Sunday": 0,
             "Monday": 20,
             "Tuesday": 30,
             "Wednesday": 40,

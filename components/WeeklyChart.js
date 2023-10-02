@@ -1,10 +1,15 @@
 import React from "react";
 import { View, Dimensions } from "react-native";
-import { Svg, Path, G, Text, Line } from "react-native-svg";
+import { Svg, Path, G, Text, Line, Circle } from "react-native-svg";
 import * as d3 from "d3";
 import data from "./data.json";
 
-const userData = data.heart_chart_cumulative_format2;
+const now = new Date();
+const day = now.getDay();
+
+const zoneData = data.heart_chart_cumulative_format2;
+
+const percentToTarget = data.percent_points;
 
 const dayMapping = {
   Sunday: "Su",
@@ -17,44 +22,47 @@ const dayMapping = {
 };
 
 const WeeklyChart = () => {
-  const width = Dimensions.get("window").width - 2 * (Dimensions.get("window").width * 0.05); // subtracting 5% margin from both sides
-
-  const height = 250;
-  const margin = { top: 20, right: 10, bottom: 50, left: 10 };
+  // Get the full width of the screen
+  const fullWidth = Dimensions.get("window").width;
+  const width = fullWidth - 2 * (fullWidth * 0.05); // subtracting 5% margin from both sides
+  
+  const height = 300;
+  const margin = { top: 100, right: 15, bottom: 50, left: 15 };
 
   const zeroData = { day: "Zero" };
-  for (let key in userData) {
+  for (let key in zoneData) {
     zeroData[key] = 0;
   }
 
   const transformedData = [zeroData].concat(
     Object.keys(dayMapping).map((day) => {
       const dayData = { day };
-      for (let key in userData) {
-        dayData[key] = userData[key][day];
+      for (let key in zoneData) {
+        dayData[key] = zoneData[key][day];
       }
       return dayData;
     })
   );
 
-  let mygroups = Object.keys(userData);
-  let stackedData = d3.stack().keys(mygroups)(transformedData);
+
+  let zones = Object.keys(zoneData);
+  let stackedData = d3.stack().keys(zones)(transformedData);
 
   const color = d3
     .scaleOrdinal()
-    .domain(mygroups)
+    .domain(zones)
     .range(["#5AC8FA", "#34C759", "#FFCC2B", "#FF9522", "#FF3B30"]);
 
     const xScale = d3
     .scaleBand()
     .domain(["Zero"].concat(Object.values(dayMapping)))
-    .range([margin.left, width - margin.right]);
+    .range([0, width]);
 
   const yScale = d3
     .scaleLinear()
     .domain([
       0,
-      d3.max(transformedData, (d) => d3.sum(mygroups, (key) => d[key])),
+      d3.max(transformedData, (d) => d3.sum(zones, (key) => d[key])),
     ])
     .range([height - margin.bottom, margin.top]);
 
@@ -71,8 +79,10 @@ const WeeklyChart = () => {
   .y1((d) => yScale(d[1]))
   .curve(d3.curveMonotoneX);
 
+  const cumulativeValueSaturday = d3.sum(zones, (zone) => zoneData[zone]["Saturday"]);
+
   return (
-    <View borderWidth="1" margin="5%" borderColor='#D7DAD8'>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Svg width={width} height={height}>
         {stackedData.map((series, i) => (
           <Path key={i} d={area(series)} fill={color(series.key)} />
@@ -81,7 +91,7 @@ const WeeklyChart = () => {
           {xScale.domain().map((tick, index) => (
             <G key={index} transform={`translate(${xScale(tick)},0)`}>
             {tick !== "Zero" && (
-                <Text y={30} fontSize={15} textAnchor="middle" color='#3B3B3B'>
+                <Text y={30} fontSize={13} fontWeight='200' textAnchor="middle" color='#3B3B3B'>
                   {tick}
                 </Text>
                 )}
@@ -96,8 +106,35 @@ const WeeklyChart = () => {
             strokeWidth={1}
           />
         </G>
+                {/* Draw the green line */}
+                <Line
+          x1={xScale(dayMapping["Saturday"])}
+          x2={xScale(dayMapping["Saturday"])}
+          y1={height - margin.bottom}
+          y2={yScale(cumulativeValueSaturday)} 
+          stroke="#34C759"
+          strokeWidth={1}
+        />
+        {/* Draw the "O" at the end of the line */}
+        <Circle
+          cx={xScale(dayMapping["Saturday"])}
+          cy={yScale(cumulativeValueSaturday) - 7}
+          r={6} // Adjust the radius as needed
+          stroke="#34C759"
+          strokeWidth={2}
+          fill="white"
+        />
+        <Text
+          x={xScale(dayMapping["Saturday"]) + 20}
+          y={yScale(cumulativeValueSaturday) - 3}
+          fontSize={12}
+          fontWeight='200'
+          textAnchor="middle"
+          color='#3B3B3B' 
+        >  {`${percentToTarget}%`}</Text>
+
       </Svg>
-    </View>
+      </View>
   );
 };
 
